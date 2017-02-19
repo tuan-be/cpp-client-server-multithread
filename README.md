@@ -18,4 +18,5 @@ Nội dung:
 Video demo app: https://www.youtube.com/watch?v=6YclNlhVVb0
 
 Xem chi tiết: https://github.com/tuan1192/cpp-client-server-multithread/wiki
+
 ——————
