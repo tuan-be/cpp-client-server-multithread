@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-  cout << "Starting server at host 127.0.0.1 and port 696969!" << endl;
+  cout << "Starting server at host 127.0.0.1 and port 30696!" << endl;
 
   Server *s;
   s = new Server();
