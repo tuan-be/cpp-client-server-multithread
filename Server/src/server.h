@@ -14,7 +14,7 @@
 #include "mythread.h"
 #include "client.h"
 
-#define PORT 6969
+#define PORT 30696
 
 using namespace std;
 
