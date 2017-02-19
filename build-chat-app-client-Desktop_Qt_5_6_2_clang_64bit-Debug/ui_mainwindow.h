@@ -20,7 +20,6 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QScrollBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
@@ -37,7 +36,6 @@ public:
     QPushButton *sendButton;
     QListView *listMessage;
     QPushButton *addFileButton;
-    QScrollBar *verticalScrollBar;
     QLabel *label_2;
     QTextEdit *textHost;
     QTextEdit *textPort;
@@ -70,10 +68,6 @@ public:
         addFileButton = new QPushButton(centralWidget);
         addFileButton->setObjectName(QStringLiteral("addFileButton"));
         addFileButton->setGeometry(QRect(5, 260, 70, 50));
-        verticalScrollBar = new QScrollBar(centralWidget);
-        verticalScrollBar->setObjectName(QStringLiteral("verticalScrollBar"));
-        verticalScrollBar->setGeometry(QRect(350, 110, 20, 131));
-        verticalScrollBar->setOrientation(Qt::Vertical);
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(10, 10, 91, 16));

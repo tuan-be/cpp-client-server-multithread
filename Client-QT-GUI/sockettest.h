@@ -16,8 +16,10 @@ public:
     explicit SocketTest(QObject *parent = 0);
     void setHostPort(QString iHost, int port);
     void Test();
+    void readyUpdateUI(QString);
 
 signals:
+    void signalUpdateUI(QString);
 
 public slots:
 

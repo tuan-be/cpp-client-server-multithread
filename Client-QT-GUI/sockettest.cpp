@@ -1,6 +1,8 @@
 // SocketTest.cpp
 
 #include "sockettest.h"
+#include "mainwindow.h"
+#include <QTextCodec>
 
 SocketTest::SocketTest(QObject *parent) :
     QObject(parent)
@@ -24,7 +26,7 @@ void SocketTest::Test()
 
     socket->connectToHost(host, port);
 
-    if(!socket->waitForDisconnected(10000))
+    if(!socket->waitForDisconnected(1000))
     {
         qDebug() << "Error: " << socket->errorString();
     }
@@ -39,7 +41,7 @@ void SocketTest::connected()
 {
     qDebug() << "Connected!";
 
-    socket->write("Hello world!");
+    socket->write("You already joined this chat box!!");
 }
 
 void SocketTest::disconnected()
@@ -55,6 +57,16 @@ void SocketTest::bytesWritten(qint64 bytes)
 void SocketTest::readyRead()
 {
     qDebug() << "Reading...";
-    qDebug() << socket->readAll();
+    QString message = socket->readAll();
+    qDebug() << message;
+//    MainWindow *w = new MainWindow();
+    // Send signal to UI
+//    connect(this, SIGNAL(signalUpdateUI(QString)), w, SLOT(updateListMessage(QString)));
+    readyUpdateUI(message);
+}
+
+void SocketTest::readyUpdateUI(QString mess)
+{
+    emit signalUpdateUI(mess);
 }
 
