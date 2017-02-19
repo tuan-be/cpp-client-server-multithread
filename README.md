@@ -15,9 +15,7 @@ Nội dung:
 
 - Môi trường: Unix
 
-Video demo app: 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6YclNlhVVb0" frameborder="0" allowfullscreen></iframe>
+Video demo app: https://www.youtube.com/watch?v=6YclNlhVVb0
 
 Xem chi tiết: https://github.com/tuan1192/cpp-client-server-multithread/wiki
 ——————
