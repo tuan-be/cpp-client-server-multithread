@@ -7,11 +7,11 @@ Nội dung:
 
 2. Kiến thức lập trình multithread, socket sử dụng C++.
 
-3. Lập trình 1 ứng dụng chat Client – Server sử dụng C++ (GUI có thể dùng lib QT, GTK)
+3. Lập trình 1 ứng dụng chat Client – Server sử dụng C++
 
 - Nhiều client chat với nhau thông qua 1 server
 
-- Socket yêu cầu sử dụng cơ chế select hoặc epoll
+- Giao diện: Sử dụng QT lib: https://www.qt.io/developers/
 
 - Môi trường: Unix
 
