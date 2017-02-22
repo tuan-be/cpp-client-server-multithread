@@ -13,7 +13,7 @@ Server::Server() {
   //For setsock opt (REUSEADDR)
   int yes = 1;
 
-  //Init serverSock and start listen()'ing
+  //Init serverSock and start listen()'ing: Type: SocketStream TCP
   serverSock = socket(AF_INET, SOCK_STREAM, 0);
   memset(&serverAddr, 0, sizeof(sockaddr_in));
   serverAddr.sin_family = AF_INET;
