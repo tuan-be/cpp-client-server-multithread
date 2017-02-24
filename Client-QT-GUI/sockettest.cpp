@@ -33,7 +33,7 @@ void SocketTest::sendMessage(const char *data){
 void SocketTest::connected()
 {
     qDebug() << "Connected!";
-
+    readyUpdateStatus(1);
     socket->write("You already joined this chat box!!");
 }
 
@@ -58,5 +58,10 @@ void SocketTest::readyRead()
 void SocketTest::readyUpdateUI(QString mess)
 {
     emit signalUpdateUI(mess);
+}
+// Update stutus connection
+void SocketTest::readyUpdateStatus(int st)
+{
+    emit signalUpdateStatus(st);
 }
 

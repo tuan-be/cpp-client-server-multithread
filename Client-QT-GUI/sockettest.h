@@ -17,9 +17,11 @@ public:
     void setHostPort(QString iHost, int port);
     void Test();
     void readyUpdateUI(QString);
+    void readyUpdateStatus(int);
 
 signals:
     void signalUpdateUI(QString);
+    void signalUpdateStatus(int);
 
 public slots:
 
